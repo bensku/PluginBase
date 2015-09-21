@@ -1,0 +1,5 @@
+name: BossbarLib
+main: org.extendedalpha.bossbarlib.BossbarLib
+version: maven-version
+description: Utilizing health bars for a UI enhancement.
+author: ExileDev

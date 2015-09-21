@@ -1,0 +1,174 @@
+name: EAPermissions
+main: org.extendedalpha.eapermissions.EAPermissions
+version: ${project.version}${project.build.number}
+author: ExileDev
+description: Comprehensive permission, chat, and world management system.
+softdepend: [Vault, Multiverse-Core, Essentials]
+commands:
+  eaperms:
+    description: EAPermissions root command
+    usage: /<command> <args>
+    aliases: [perms, perm, eapermissions]
+  nick:
+    description: Set a player's nickname
+    usage: /<command> [player] <nick>
+  prefix:
+    description: Sets your prefix
+    usage: /<command> <prefix>
+    aliases: [pre]
+  prefixreset:
+    description: Reset a player's prefix
+    usage: /<command> [player]
+    aliases: [prer]
+  realname:
+    description: Get a player's real name
+    usage: /<command> <player>
+  suffix:
+    description: Sets your suffix
+    usage: /<command> <suffix>
+    aliases: [suf]
+  suffixreset:
+    description: Reset a player's suffix
+    usage: /<command> [player]
+    aliases: [sufr]
+permissions:
+  eapermissions.admin:
+    description: Full access to EAPermissions commands
+    default: op
+    children:
+      eapermissions.manage.users: true
+      eapermissions.manage.groups: true
+      eapermissions.chat.color: true
+      eapermissions.chat.formatting: true
+      eapermissions.chat.rainbow: true
+      eapermissions.cmd.prefix: true
+      eapermissions.cmd.reload: true
+      eapermissions.cmd.save: true
+      eapermissions.cmd.suffix: true
+      eapermissions.cmd.nick: true
+      eapermissions.cmd.realname: true
+      eapermissions.cmd.reload: true
+      eapermissions.cmd.save: true
+      eapermissions.moderator: true
+  eapermissions.moderator:
+    description: Allows access to commands meant for mods
+    default: false
+    children:
+      eapermissions.cmd.prefix.reset: true
+      eapermissions.cmd.prefix.reset.others: true
+      eapermissions.cmd.suffix.reset: true
+      eapermissions.cmd.suffix.reset.others: true
+  eapermissions.manage.users:
+    description: Manage users' permissions
+    default: false
+    children:
+      eapermissions.user.view.info: true
+      eapermissions.user.add.subgroup: true
+      eapermissions.user.add.permission: true
+      eapermissions.user.remove.subgroup: true
+      eapermissions.user.remove.permission: true
+      eapermissions.user.set.group: true
+      eapermissions.user.set.prefix: true
+      eapermissions.user.set.suffix: true
+      eapermissions.user.set.option: true
+      eapermissions.user.has.permission: true
+      eapermissions.user.has.group: true
+      eapermissions.user.has.option: true
+      eapermissions.user.list.permissions: true
+      eapermissions.user.reset: true
+  eapermissions.user.view.info:
+    default: false
+  eapermissions.user.add.subgroup:
+    default: false
+  eapermissions.user.add.permission:
+    default: false
+  eapermissions.user.remove.subgroup:
+    default: false
+  eapermissions.user.remove.permission:
+    default: false
+  eapermissions.user.set.group:
+    default: false
+  eapermissions.user.set.prefix:
+    default: false
+  eapermissions.user.set.suffix:
+    default: false
+  eapermissions.user.set.option:
+    default: false
+  eapermissions.user.has.permission:
+    default: false
+  eapermissions.user.has.group:
+    default: false
+  eapermissions.user.has.option:
+    default: false
+  eapermissions.user.list.permissions:
+    default: false
+  eapermissions.user.reset:
+    default: false
+  eapermissions.manage.groups:
+    description: Manage groups' permissions
+    default: false
+    children:
+      eapermissions.group.view.info: true
+      eapermissions.group.add.permission: true
+      eapermissions.group.remove.permission: true
+      eapermissions.group.set.prefix: true
+      eapermissions.group.set.suffix: true
+      eapermissions.group.set.option: true
+      eapermissions.group.has.permission: true
+      eapermissions.group.has.option: true
+      eapermissions.group.list.permissions: true
+      eapermissions.group.list.users: true
+      eapermissions.group.list: true
+      eapermissions.group.create: true
+  eapermissions.group.view.info:
+    default: false
+  eapermissions.group.add.permission:
+    default: false
+  eapermissions.group.remove.permission:
+    default: false
+  eapermissions.group.set.prefix:
+    default: false
+  eapermissions.group.set.suffix:
+    default: false
+  eapermissions.group.set.option:
+    default: false
+  eapermissions.group.has.permission:
+    default: false
+  eapermissions.group.has.option:
+    default: false
+  eapermissions.group.list.users:
+    default: false
+  eapermissions.group.list.permissions:
+    default: false
+  eapermissions.group.list:
+    default: false
+  eapermissions.group.create:
+    default: false
+  eapermissions.chat.color:
+    default: false
+  eapermissions.chat.formatting:
+    default: false
+  eapermissions.chat.rainbow:
+    default: false
+  eapermissions.cmd.prefix:
+    default: false
+  eapermissions.cmd.prefix.reset:
+    default: false
+  eapermissions.cmd.prefix.reset.others:
+    default: false
+  eapermissions.cmd.suffix:
+    default: false
+  eapermissions.cmd.suffix.reset:
+    default: false
+  eapermissions.cmd.suffix.reset.others:
+    default: false
+  eapermissions.cmd.nick:
+    default: false
+  eapermissions.cmd.realname:
+    default: false
+  eapermissions.cmd.reload:
+    default: false
+  eapermissions.cmd.save:
+    default: false
+  eapermissions.cmd.version:
+    default: true

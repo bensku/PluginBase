@@ -15,7 +15,7 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.extendedalpha.blockphysics;
+package org.extendedalpha.blockphysics.components;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,6 +37,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.util.BlockIterator;
+import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
 import org.extendedalpha.core.ItemGlow;
 import org.extendedalpha.core.MiscUtil;
 import org.extendedalpha.core.ParticleEffect;

@@ -18,20 +18,6 @@
     </repository>
   </repositories>
 
-  <profiles>
-    <profile>
-      <id>jenkins</id>
-      <activation>
-        <property>
-          <name>env.BUILD_NUMBER</name>
-        </property>
-      </activation>
-      <properties>
-        <project.build.number>-b${env.BUILD_NUMBER}</project.build.number>
-      </properties>
-    </profile>
-  </profiles>
-
   <build>
     <plugins>
       <plugin>

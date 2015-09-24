@@ -15,7 +15,7 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.extendedalpha.blockphysics;
+package org.extendedalpha.blockphysics.handlers;
 
 import com.sk89q.worldguard.bukkit.WGBukkit;
 import com.sk89q.worldguard.protection.flags.DefaultFlag;
@@ -28,6 +28,8 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.FallingBlock;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
+import org.extendedalpha.blockphysics.components.SlideManager;
 
 public class SnowHandler {
     private final BlockPhysicsPlugin plugin;

@@ -15,10 +15,11 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.extendedalpha.blockphysics;
+package org.extendedalpha.blockphysics.components;
 
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.material.MaterialData;
+import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
 import org.extendedalpha.core.LogUtils;
 
 import java.util.HashMap;

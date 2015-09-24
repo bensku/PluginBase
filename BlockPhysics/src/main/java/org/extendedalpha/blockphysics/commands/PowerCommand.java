@@ -20,7 +20,7 @@ package org.extendedalpha.blockphysics.commands;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
-import org.extendedalpha.blockphysics.SlideOTron;
+import org.extendedalpha.blockphysics.components.SlideOTron;
 import org.extendedalpha.core.EAUtilsException;
 import org.extendedalpha.core.EAValidate;
 import org.extendedalpha.core.commands.AbstractCommand;

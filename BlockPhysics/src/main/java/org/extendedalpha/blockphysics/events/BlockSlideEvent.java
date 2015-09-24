@@ -15,7 +15,7 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.extendedalpha.blockphysics;
+package org.extendedalpha.blockphysics.events;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;

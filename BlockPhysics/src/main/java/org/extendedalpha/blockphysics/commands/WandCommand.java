@@ -17,7 +17,7 @@
 
 package org.extendedalpha.blockphysics.commands;
 
-import org.extendedalpha.blockphysics.SlideOTron;
+import org.extendedalpha.blockphysics.components.SlideOTron;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;

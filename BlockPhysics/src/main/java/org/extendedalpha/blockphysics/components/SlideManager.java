@@ -15,7 +15,7 @@
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.extendedalpha.blockphysics;
+package org.extendedalpha.blockphysics.components;
 
 import com.sk89q.worldguard.bukkit.WGBukkit;
 import com.sk89q.worldguard.protection.flags.DefaultFlag;
@@ -31,6 +31,8 @@ import org.bukkit.material.MaterialData;
 import org.bukkit.material.PistonBaseMaterial;
 import org.bukkit.material.PistonExtensionMaterial;
 import org.bukkit.util.Vector;
+import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
+import org.extendedalpha.blockphysics.events.BlockSlideEvent;
 import org.extendedalpha.core.Debugger;
 import org.extendedalpha.core.LogUtils;
 import org.extendedalpha.core.cuboid.Cuboid;

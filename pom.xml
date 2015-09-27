@@ -16,7 +16,6 @@
         <module>API</module>
         <module>NMS-v1_8_R3</module>
         <module>BlockPhysics</module>
-        <module>BossbarLib</module>
         <module>EAPermissions</module>
     </modules>
 

@@ -1,0 +1,42 @@
+/*
+ * This file is part of ExtendedAlpha-Core
+ *
+ * Copyright (C) 2013-2015 ExtendedAlpha
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+package org.extendedalpha.core.general.block;
+
+import java.util.List;
+import org.bukkit.Location;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+
+public class Vein {
+    private static final BlockFace[] faces = new BlockFace[]{BlockFace.UP, BlockFace.DOWN, BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST, BlockFace.NORTH_EAST, BlockFace.NORTH_WEST, BlockFace.SOUTH_EAST, BlockFace.SOUTH_WEST};
+
+    public static void calculate(Location origin, Location anchor, List<Location> list, int max) {
+        if (list.size() > max) {
+            return;
+        }
+        for (BlockFace face : faces) {
+            Block next = anchor.getBlock().getRelative(face);
+            if (next.getType() != anchor.getBlock().getType() || list.contains((Object)next.getLocation())) continue;
+            list.add(next.getLocation());
+            Vein.calculate(origin, next.getLocation(), list, max);
+        }
+    }
+}
+

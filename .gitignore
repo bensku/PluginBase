@@ -110,3 +110,6 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
+
+# EAPermissions Plugin
+.EAPermissions

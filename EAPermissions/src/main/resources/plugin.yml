@@ -1,6 +1,6 @@
 name: EAPermissions
 main: org.extendedalpha.eapermissions.EAPermissions
-version: ${project.version}${project.build.number}
+version: ${project.version}
 author: ExileDev
 description: Comprehensive permission, chat, and world management system.
 softdepend: [Vault, Multiverse-Core, Essentials]

@@ -2,6 +2,9 @@
 
 ExtendedAlpha-Core is a collection of useful classes for Bukkit plugins.
 
+## Documentation
+http://docs.extendedalpha.org/
+
 ## Building
 
 You will need Maven.

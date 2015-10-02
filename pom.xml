@@ -16,6 +16,7 @@
         <module>API</module>
         <module>NMS-v1_8_R3</module>
         <module>BlockPhysics</module>
+        <module>EAPermissions</module>
     </modules>
 
     <!-- Define the repo here since multiple modules will be using it -->

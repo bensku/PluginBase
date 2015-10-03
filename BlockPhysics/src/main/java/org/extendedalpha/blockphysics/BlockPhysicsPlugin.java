@@ -289,7 +289,7 @@ public class BlockPhysicsPlugin extends JavaPlugin implements ConfigurationListe
             } else {
                 dbg.setTarget(null);
             }
-        } else if (key.equals("coloured_console")) {
+        } else if (key.equals("colored_console")) {
             MiscUtil.setColouredConsole((Boolean) newVal);
         } else if (key.equals("worldguard.enabled")) {
             slideManager.setWorldGuardEnabled((Boolean) newVal);

@@ -2,6 +2,8 @@
 
 ExtendedAlpha-Core is a collection of useful classes for Bukkit plugins.
 
+[![Build Status](https://travis-ci.org/ExtendedAlpha/ExtendedAlpha-Core.svg)](https://travis-ci.org/ExtendedAlpha/ExtendedAlpha-Core)
+
 ## Documentation
 http://docs.extendedalpha.org/
 

@@ -5,7 +5,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 
@@ -110,3 +109,9 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
+
+# AlphaGuard Plugin
+*AlphaGuard
+
+# EAPermissions Plugin
+*EAPermissions

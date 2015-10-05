@@ -2,20 +2,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.extendedalpha</groupId>
-    <artifactId>extendedalpha-parent</artifactId>
+    <artifactId>pluginbase-parent</artifactId>
     <packaging>pom</packaging>
     <version>parent</version>
-    <name>ExtendedAlpha Core</name>
+    <name>PluginBase Parent</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <description>Collection of useful classes I use in my plugins</description>
 
     <modules>
-        <module>Core</module>
+        <module>PluginBase</module>
         <module>API</module>
         <module>NMS-v1_8_R3</module>
-        <module>BlockPhysics</module>
     </modules>
 
     <!-- Define the repo here since multiple modules will be using it -->

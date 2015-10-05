@@ -1,8 +1,8 @@
-## ExtendedAlpha-Core
+## PluginBase
 
-ExtendedAlpha-Core is a collection of useful classes for Bukkit plugins.
+PluginBase is a collection of useful classes for Bukkit plugins.
 
-[![Build Status](https://travis-ci.org/ExtendedAlpha/ExtendedAlpha-Core.svg)](https://travis-ci.org/ExtendedAlpha/ExtendedAlpha-Core)
+[![Build Status](https://travis-ci.org/ExtendedAlpha/PluginBase.svg)](https://travis-ci.org/ExtendedAlpha/PluginBase)
 
 ## Documentation
 http://docs.extendedalpha.org/
@@ -11,12 +11,12 @@ http://docs.extendedalpha.org/
 
 You will need Maven.
 
-1) Download ExtendedAlpha-Core: "git clone https://github.com/ExtendedAlpha/ExtendedAlpha-Core.git"
+1) Download PluginBase: "git clone https://github.com/ExtendedAlpha/PluginBase.git"
 
-2) Build ExtendedAlpha-Core: "mvn install"
+2) Build PluginBase: "mvn install"
 
 ## License
 
-ExtendedAlpha-Core is licensed under the GPL / GNU v3.  You may use it freely in your own plugins, but you must make available the source to any modified
-versions of ExtendedAlpha-Core that you distribute in your own plugins.
+PluginBase is licensed under the GPL / GNU v3.  You may use it freely in your own plugins, but you must make available the source to any modified
+versions of PluginBase that you distribute in your own plugins.
 

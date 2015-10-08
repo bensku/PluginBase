@@ -37,7 +37,7 @@ public class PluginAnnotationProcessor extends AbstractProcessor {
     @Override
     public boolean process(Set<? extends TypeElement> annots, RoundEnvironment rEnv) {
         Element main = null;
-        for(Element el : rEnv.getElementsAnnotatedWith(Main.class)) {
+        for(Element el : rEnv.getElementsAnnotatedWith(AnnotationMain.class)) {
             if(main != null){
                 raiseError("More than one class with @Main found, aborting!");
                 return false;

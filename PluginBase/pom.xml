@@ -197,7 +197,7 @@
                      <artifactSet>
                        <includes>
                          <include>org.json:*</include>
-                         <include>org.extendedalpha.core:*</include>
+                         <include>org.extendedalpha.pluginbase:*</include>
                        </includes>
                      </artifactSet>
                    </configuration>

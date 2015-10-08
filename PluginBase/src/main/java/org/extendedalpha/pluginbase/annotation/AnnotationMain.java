@@ -52,4 +52,4 @@ import java.lang.annotation.Target;
  */
 
 @Target(ElementType.TYPE)
-public @interface Main {}
+public @interface AnnotationMain {}

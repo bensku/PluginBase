@@ -1,10 +1,10 @@
-## PluginBase
+![PluginBase](http://i.imgur.com/FnI94dk.png)
 
-PluginBase is a collection of useful classes for Bukkit plugins.
+> PluginBase is a collection of useful classes for Bukkit and Spigot plugins.
 
-[![Build Status](https://travis-ci.org/ExtendedAlpha/PluginBase.svg)](https://travis-ci.org/ExtendedAlpha/PluginBase)
+> Note that this plugin should be shaded into your plugin using maven shade plugin
 
-## Documentation
+## Java Docs
 http://docs.extendedalpha.org/
 
 ## Building
@@ -13,7 +13,7 @@ You will need Maven.
 
 1) Download PluginBase: "git clone https://github.com/ExtendedAlpha/PluginBase.git"
 
-2) Build PluginBase: "mvn install"
+2) Build PluginBase: "mvn clean install"
 
 ## License
 

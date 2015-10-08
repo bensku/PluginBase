@@ -1,0 +1,56 @@
+max_slides_per_tick: 10
+max_slides_total: 25
+pager:
+  lines: 0
+colored_console: true
+fancy_explosions:
+  tnt: false
+  creeper: false
+  enderdragon: false
+  other: false
+explosions:
+  force_mult: 1.0
+  yield_chance: 50
+  prime_tnt: true
+drop_slidy_floaters: true
+drop_nonslidy_floaters: false
+worldguard:
+  enabled: true
+  use_flag: enderman-grief
+cliff_stability: 50
+explode_effect_chance: 5
+drop_items: true
+falling_block_damage: 0
+falling_blocks_bounce: true
+enabled: false
+horizontal_slides: true
+slide_chance:
+  dirt: 50
+  grass: 25
+  sand: 100
+  gravel: 100
+drop_chance:
+  dirt: 0
+transform:
+  grass: dirt
+snow:
+  check_interval: 0
+  form_chance: 0
+  form_rate: 1
+  melt_chance: 0
+  melt_rate: 1
+  melt_away: false
+  slide_thickness: 2
+  smoothing: false
+  melt_light_level: 12
+bracing_materials: []
+bracing_distance: 1
+full_bracing_scan: false
+sticky_pistons:
+  retracted: true
+  extended: true
+only_when_raining: false
+bounce_chance: 100
+debug_level: 0
+slide_into_liquid: true
+non_vanilla: false

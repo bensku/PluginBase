@@ -22,7 +22,7 @@ island:
    # OR RESET YOUR WORLD
    # Value must be an even number
 
-   distance: 200
+   distance: 250
 
    # Default protection range (even number). Min = 0, Recommended = 100
    # Value must be at least 16 blocks less than the island distance unless you set
@@ -30,7 +30,7 @@ island:
    # Use this permission to set for different groups: skyblock.island.range.<number>
    # Larger values will take longer to calculate the island level
    # Admins can change protection sizes for players individually using /sbadmin setrange
-   protectionRange: 100
+   protectionRange: 150
 
    # If you want to have protection range = distance set the following to true.
    # It may result in incomplete deletion of islands. Not recommended, but not fatal.
@@ -185,11 +185,6 @@ island:
 
 # General Settings
 general:
-   # Check for updates - this will tell Ops and the console if there is a new
-   # version available. It contacts dev.bukkit.org to request the latest version
-   # info. It does not download the latest version or change any files
-   checkupdates: true
-
    # Sea level height (don't changes this mid-game unless you delete the world)
    # Minimum is 0, which means you are playing sky block!
    # If sea level is less than about 10, then players will drop right through it
@@ -213,7 +208,7 @@ general:
    # Use the control panel as the default display for /island
    # /island will always create an island if one does not exist
    # If the control panel is not used, then /island will teleport the player home
-   usecontrolpanel: false
+   usecontrolpanel: true
 
    # Create Nether - if this is false, the nether world will not be made and access to
    # AcidIsland control of the nether will not occur. Other plugins may still enable
@@ -226,7 +221,7 @@ general:
    # New island-style nether. Change to false for standard nether
    newnether: true
    # Nether trees are made if a player grows a tree in the new nether (gravel and glowstone)
-   nethertrees: true  
+   nethertrees: true
 
    #How long a player must wait before they can reset their island again in second
    resetwait: 300

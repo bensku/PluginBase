@@ -2,7 +2,8 @@ name: Skyblock
 main: org.extendedalpha.skyblock.Skyblock
 version: ${version}
 description: Skyblock Plugin
-author: Tastybento
+author: ExileDev
+authors: [ExileDev, Tastybento]
 depend: [Vault]
 softdepend: [Herochat]
 load: startup

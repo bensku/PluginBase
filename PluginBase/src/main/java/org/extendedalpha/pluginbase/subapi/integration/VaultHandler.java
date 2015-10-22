@@ -3,14 +3,14 @@ package org.extendedalpha.pluginbase.subapi.integration;
 import java.util.List;
 import java.util.logging.Level;
 
-import org.extendedalpha.pluginbase.subapi.SubPlugin;
-import org.extendedalpha.pluginbase.subapi.util.ListUtil;
-import org.extendedalpha.pluginbase.subapi.util.Util;
 import net.milkbowl.vault.Vault;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
 import net.milkbowl.vault.permission.Permission;
+import org.extendedalpha.pluginbase.subapi.SubPlugin;
+import org.extendedalpha.pluginbase.subapi.util.ListUtil;
+import org.extendedalpha.pluginbase.subapi.util.Util;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -24,6 +24,7 @@ import org.bukkit.plugin.ServicesManager;
 
 public class VaultHandler extends DependencyProvider<Vault>
 {
+
 	private Permission perm;
 	private Economy econ;
 	private Chat chat;
@@ -100,7 +101,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 		try
 		{
 			@SuppressWarnings("deprecation")
-			EconomyResponse response = econ.depositPlayer(account, amount);
+            EconomyResponse response = econ.depositPlayer(account, amount);
 			return response.transactionSuccess() ? null : response.errorMessage;
 		}
 		catch (Throwable ex)

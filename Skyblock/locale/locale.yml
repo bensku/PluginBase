@@ -150,7 +150,7 @@ challenges:
   erroryouaremissing: "You are missing"
   expReward: "Exp reward"
   firstTimeRewards: "First time reward(s)"
-  guititle: "aSkyBlock Challenges"
+  guititle: "SkyBlock Challenges"
   help1: "Use /c <name> to view information about a challenge."
   help2: "Use /c complete <name> to attempt to complete that challenge."
   incomplete: "Incomplete"

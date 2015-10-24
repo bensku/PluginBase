@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableMap;
 import org.apache.commons.lang.WordUtils;
 import org.bukkit.DyeColor;
 import org.bukkit.Material;
+import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -493,34 +494,34 @@ public class ItemNames {
             .put("380", "Cauldron")
             .put("381", "Eye of Ender")
             .put("382", "Glistering Melon")
-    	    .put("383", "Spawn Egg")
-    	    .put("383:50", "Spawn Creeper")
-    	    .put("383:51", "Spawn Skeleton")
-    	    .put("383:52", "Spawn Spider")
-    	    .put("383:54", "Spawn Zombie")
-    	    .put("383:55", "Spawn Slime")
-    	    .put("383:56", "Spawn Ghast")
-    	    .put("383:57", "Spawn Pigman")
-    	    .put("383:58", "Spawn Enderman")
-    	    .put("383:59", "Spawn Cave Spider")
-    	    .put("383:60", "Spawn Silverfish")
-    	    .put("383:61", "Spawn Blaze")
-    	    .put("383:62", "Spawn Magma Cube")
-    	    .put("383:65", "Spawn Bat")
-    	    .put("383:66", "Spawn Witch")
-    	    .put("383:67", "Spawn Endermite")
-    	    .put("383:68", "Spawn Guardian")
-    	    .put("383:90", "Spawn Pig")
-    	    .put("383:91", "Spawn Sheep")
-    	    .put("383:92", "Spawn Cow")
-    	    .put("383:93", "Spawn Chicken")
-    	    .put("383:94", "Spawn Squid")
-    	    .put("383:95", "Spawn Wolf")
-    	    .put("383:96", "Spawn Mooshroom")
-    	    .put("383:98", "Spawn Ocelot")
-    	    .put("383:100", "Spawn Horse")
-    	    .put("383:101", "Spawn Rabbit")
-    	    .put("383:120", "Spawn Villager")
+            .put("383", "Spawn Egg")
+            .put("383:50", "Spawn Creeper")
+            .put("383:51", "Spawn Skeleton")
+            .put("383:52", "Spawn Spider")
+            .put("383:54", "Spawn Zombie")
+            .put("383:55", "Spawn Slime")
+            .put("383:56", "Spawn Ghast")
+            .put("383:57", "Spawn Pigman")
+            .put("383:58", "Spawn Enderman")
+            .put("383:59", "Spawn Cave Spider")
+            .put("383:60", "Spawn Silverfish")
+            .put("383:61", "Spawn Blaze")
+            .put("383:62", "Spawn Magma Cube")
+            .put("383:65", "Spawn Bat")
+            .put("383:66", "Spawn Witch")
+            .put("383:67", "Spawn Endermite")
+            .put("383:68", "Spawn Guardian")
+            .put("383:90", "Spawn Pig")
+            .put("383:91", "Spawn Sheep")
+            .put("383:92", "Spawn Cow")
+            .put("383:93", "Spawn Chicken")
+            .put("383:94", "Spawn Squid")
+            .put("383:95", "Spawn Wolf")
+            .put("383:96", "Spawn Mooshroom")
+            .put("383:98", "Spawn Ocelot")
+            .put("383:100", "Spawn Horse")
+            .put("383:101", "Spawn Rabbit")
+            .put("383:120", "Spawn Villager")
             .put("384", "Bottle o' Enchanting")
             .put("385", "Fire Charge")
             .put("386", "Book and Quill")
@@ -623,6 +624,17 @@ public class ItemNames {
     }
 
     /**
+     * Given an item stack, return a friendly printable name for the block, as
+     * the (English-language) vanilla Minecraft client would display it.
+     *
+     * @param block the block
+     * @return a friendly printable name for the block
+     */
+    public static String lookup(Block block) {
+        return lookup(new ItemStack(block.getType(), 1, block.getData()));
+    }
+
+    /**
      * Given an item stack return a friendly name for the item, in the form
      * "{amount} x {item-name}" where {amount} is the number of items in the
      * stack and {item-name} is the return value of
@@ -635,4 +647,5 @@ public class ItemNames {
         String s = lookup(stack);
         return stack.getAmount() + " x " + s;
     }
+
 }

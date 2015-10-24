@@ -11,7 +11,6 @@ import org.bukkit.entity.Player;
  * @author ExileDev
  */
 
-// TODO: Keep up to date with MC versions.
 public abstract class WrappedPacket extends AbstractWrapper implements Packet
 {
 	@Override

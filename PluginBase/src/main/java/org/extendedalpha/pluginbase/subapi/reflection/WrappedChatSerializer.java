@@ -8,7 +8,6 @@ import org.extendedalpha.pluginbase.subapi.exception.ReflectionException;
  * @author ExileDev
  */
 
-// TODO: Keep up to date with MC versions.
 public class WrappedChatSerializer extends AbstractWrapper
 {
 	private static final String CLASS_NAME = "ChatSerializer";

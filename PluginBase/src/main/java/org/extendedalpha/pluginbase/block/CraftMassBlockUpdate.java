@@ -165,7 +165,6 @@ public class CraftMassBlockUpdate implements MassBlockUpdate, Runnable {
 	}
 
 	/**
-	 * TODO: this should be a method in the Bukkit CraftWorld class, e.g world.createMassBlockUpdate()
 	 *
 	 * @param world
 	 * @return

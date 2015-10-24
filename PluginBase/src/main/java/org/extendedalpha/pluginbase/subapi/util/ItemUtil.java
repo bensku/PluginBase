@@ -334,7 +334,6 @@ public class ItemUtil
 				}
 			}
 
-			// TODO: Firework and Book support
 			item.setItemMeta(meta);
 		} catch (Throwable ex) { }
 	}
@@ -382,8 +381,6 @@ public class ItemUtil
 
 			ret.append(", lore:" + lore.toString());
 		}
-
-		// TODO: More meta support
 
 		return ret.toString();
 	}

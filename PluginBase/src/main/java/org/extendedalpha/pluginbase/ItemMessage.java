@@ -108,7 +108,6 @@ public class ItemMessage {
 	 */
 	public void sendMessage(Player player, String message, int duration, int priority) {
 		if (player.getGameMode() == GameMode.CREATIVE) {
-			// TODO: this doesn't work properly in creative mode.  Need to investigate further
 			// if it can be made to work, but for now, just send an old-fashioned chat message.
 			player.sendMessage(message);
 		} else {

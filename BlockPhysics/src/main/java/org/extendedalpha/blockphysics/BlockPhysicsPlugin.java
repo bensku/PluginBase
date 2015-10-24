@@ -75,7 +75,7 @@ public class BlockPhysicsPlugin extends JavaPlugin implements ConfigurationListe
 
         MiscUtil.init(this);
 
-        Debugger.getInstance().setPrefix("[LSL] ");
+        Debugger.getInstance().setPrefix("[BP] ");
         Debugger.getInstance().setLevel(getConfig().getInt("debug_level"));
         if (getConfig().getInt("debug_level") > 0) {
             Debugger.getInstance().setTarget(getServer().getConsoleSender());

@@ -36,7 +36,6 @@ public abstract class SubPlugin extends JavaPlugin implements Reloadable
 		return ChatColor.YELLOW.toString();
 	}
 
-	// TODO: Returning null, especially with API methods, is generally a bad idea
 	// I'd like to move to something like Optional, but it would cause some serious breakage.
 
 	/**

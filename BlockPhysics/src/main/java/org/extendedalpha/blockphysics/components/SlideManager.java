@@ -387,8 +387,7 @@ public class SlideManager {
         // account for possible non-vanilla blocks - we just treat anything
         // that isn't a vanilla block as solid
         // 175 is the highest vanilla block ID for MC 1.7.x
-        // TODO: looks like it will be 197 for MC 1.8
-        return material.isSolid() || (nonVanilla && material.getId() > 175);
+        return material.isSolid() || (nonVanilla && material.getId() > 197);
     }
 
     private class Slide implements ScheduledBlockMove {

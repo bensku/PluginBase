@@ -6,7 +6,6 @@ import org.extendedalpha.pluginbase.subapi.exception.ReflectionException;
  * @author ExileDev
  */
 
-// TODO: Keep up to date with MC versions.
 public class WrappedChatPacket extends WrappedPacket
 {
 	private static final String CLASS_NAME = "PacketPlayOutChat";

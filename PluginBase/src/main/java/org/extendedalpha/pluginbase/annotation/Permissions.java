@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  */
 
 @Target(ElementType.TYPE)
-public @interface Permissions { // TODO: in java 8, make repeatable.
+public @interface Permissions {
 
     public Perm[] value();
 

@@ -163,7 +163,6 @@ public class MessagePager {
     }
 
     public void add(List<String> lines) {
-        //TODO: apply MinecraftChatStr.alignTags(lines, true)
         //		in pagesize segments before adding to buffer
 
         List<String> actual = new ArrayList<String>();

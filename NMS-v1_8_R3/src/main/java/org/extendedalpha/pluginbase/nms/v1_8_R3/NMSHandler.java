@@ -224,7 +224,7 @@ public class NMSHandler implements NMSAbstraction {
         int maxY = nmsChunk.heightMap[i1];
 
         Block block = nmsChunk.getType(blockposition);
-        int j2 = block.p(); // TODO: should this be getBlockLightBlocking(Block.getId(block))?
+        int j2 = block.p();
 
         if (j2 > 0) {
             if (j >= maxY) {

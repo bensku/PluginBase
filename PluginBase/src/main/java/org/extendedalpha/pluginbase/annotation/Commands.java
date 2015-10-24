@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  */
 
 @Target(ElementType.TYPE)
-public @interface Commands { // TODO: in java 8, make repeatable.
+public @interface Commands {
 
     public Cmd[] value();
 

@@ -27,4 +27,3 @@ You will need Maven.
 ## Donate
 <p>Do you like my work? Do you want to buy me a coffee? :)<br>
 USD: <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=tEw_ZZBXcHHmBj76Q2OiuGEzzX6S3kFPGNkTyDkbGgsBzwK-qskg1_0kLiO&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b081984719ecfa9a8ffe80733a1a700ced90ae"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"></a></p>
-## License

@@ -134,7 +134,7 @@
                             <relocations>
                                 <relocation>
                                     <pattern>org.extendedalpha.pluginbase</pattern>
-                                    <shadedPattern>org.extendedalpha.pluginbbase</shadedPattern>
+                                    <shadedPattern>org.extendedalpha.pluginbase</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.mcstats</pattern>

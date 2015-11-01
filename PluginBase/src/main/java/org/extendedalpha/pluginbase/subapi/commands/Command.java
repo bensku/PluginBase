@@ -261,7 +261,7 @@ public abstract class Command implements CommandExecutor
 		{
 			Syntax syntax = syntaxes.get(i);
 			StringBuilder line = new StringBuilder();
-			line.append("&b/");
+			line.append("&6/");
 
 			if (plugin.getCommandHandler().usesCommandPrefix() && usesPrefix)
 				line.append(plugin.getCommandHandler().getCommandPrefix()).append(" ");
@@ -301,7 +301,7 @@ public abstract class Command implements CommandExecutor
 		{
 			Syntax syntax = syntaxes.get(i);
 			StringBuilder templateBuilder = new StringBuilder();
-			templateBuilder.append("&b/");
+			templateBuilder.append("&6/");
 
 			if (plugin.getCommandHandler().usesCommandPrefix() && usesPrefix)
 				templateBuilder.append(plugin.getCommandHandler().getCommandPrefix()).append(" ");

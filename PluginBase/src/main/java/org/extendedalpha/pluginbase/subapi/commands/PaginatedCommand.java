@@ -32,13 +32,13 @@ public abstract class PaginatedCommand extends Command
 				index = Integer.parseInt(args[pageArgIndex]);
 				if (index < 1 || index > getPageCount())
 				{
-					err("&4There is no page with the index &c{0}&4.", index);
+					err("&cThere is no page with the index &c{0}&c.", index);
 					return;
 				}
 			}
 			catch (NumberFormatException ex)
 			{
-				err("&c{0} &4is not a number.", args[0]);
+				err("&c{0} &cis not a number.", args[0]);
 				return;
 			}
 		}

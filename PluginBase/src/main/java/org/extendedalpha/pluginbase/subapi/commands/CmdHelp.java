@@ -35,7 +35,7 @@ public class CmdHelp extends Command
 		this.visibility = CommandVisibility.ALL;
 		this.usesPrefix = true;
 
-		this.header = "&3====[ &e{0} Commands &3(&e{1}&3/&e{2}&3) ]====";
+		this.header = "&7====[ &6{0} Commands &7(&6{1}&7/&6{2}&7) ]====";
 		this.footer = "";
 	}
 
@@ -142,7 +142,7 @@ public class CmdHelp extends Command
 				ret.add(FormatUtil.format(extra));
 		}
 
-		ret.add(FormatUtil.format("&eKey: &3<required> [optional]"));
+		ret.add(FormatUtil.format("&6Key: &7<required> [optional]"));
 		return ret;
 	}
 

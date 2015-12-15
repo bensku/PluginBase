@@ -62,11 +62,14 @@ public class BlockPhysicsPlugin extends JavaPlugin implements ConfigurationListe
     private int ticks = 0;
     private int snowInterval = 600;
     private boolean protocolLibEnabled = false;
+    private boolean disabling;
 
     private static BlockPhysicsPlugin instance = null;
 
     @Override
     public void onEnable() {
+        disabling = false;
+
         instance = this;
 
         LogUtils.init(this);
@@ -125,6 +128,7 @@ public class BlockPhysicsPlugin extends JavaPlugin implements ConfigurationListe
     @Override
     public void onDisable() {
         instance = null;
+        disabling = true;
     }
 
     @Override

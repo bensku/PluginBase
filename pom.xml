@@ -17,6 +17,7 @@
         <module>NMS-v1_8_R3</module>
         <module>BlockPhysics</module>
         <module>InFamousPermissions</module>
+        <module>PerWorldInventory-Reloaded</module>
         <module>Skyblock</module>
     </modules>
 

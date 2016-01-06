@@ -17,7 +17,7 @@ public class LogHandler
 {
 	private final SubPlugin plugin;
 
-	/**
+    /**
 	 * Logs a formatted message to console with a given level.
 	 *
 	 * @param level Logging {@link Level}.

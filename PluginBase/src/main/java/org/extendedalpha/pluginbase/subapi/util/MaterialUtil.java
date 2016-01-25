@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.extendedalpha.pluginbase.subapi.integration.VaultHandler;
 
 /**
  * Util dealing with the loss of item id's.
@@ -17,8 +18,8 @@ public class MaterialUtil
 	private MaterialUtil() { }
 
 	/**
-	 * Gets the {Material} from a given string. This is essentially a wrapper
-	 * for {@link Material#matchMaterial(String)}
+	 * Gets the {@link Material} from a given string using Bukkit, Vault, or
+	 * internal Minecraft.
 	 *
 	 * @param string String to get the Material from
 	 * @return The material, or null if not found
@@ -26,28 +27,32 @@ public class MaterialUtil
 	 */
 	public static final Material getMaterial(String string)
 	{
-		Material material = null;
+		Material material = Material.matchMaterial(string);
+		if (material != null)
+			return material;
 
-		try
-		{
-			material = Material.matchMaterial(string);
-		} catch (Throwable ex) { }
-
-		if (material == null)
+		// Resolve using Vault, if applicable
+		if (Bukkit.getPluginManager().isPluginEnabled("Vault"))
 		{
 			try
 			{
-				// Attempt to grab it unsafely. The call will never return null,
-				// but if nothing is found, it will return air.
-
-				@SuppressWarnings("deprecation")
-				Material internal = Bukkit.getUnsafe().getMaterialFromInternalName(string);
-				if (internal != Material.AIR)
-					material = internal;
+				material = VaultHandler.resolve(string);
+				if (material != null)
+					return material;
 			} catch (Throwable ex) { }
 		}
 
-		return material;
+		try
+		{
+			// Attempt to grab it unsafely. The call will never return null,
+			// but if nothing is found, it will return air.
+
+			@SuppressWarnings("deprecation")
+			Material internal = Bukkit.getUnsafe().getMaterialFromInternalName(string);
+			if (internal != Material.AIR)
+				return internal;
+		} catch (Throwable ex) { }
+		return null;
 	}
 
 	/**

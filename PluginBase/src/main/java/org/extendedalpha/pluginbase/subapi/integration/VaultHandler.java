@@ -7,7 +7,10 @@ import net.milkbowl.vault.Vault;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
+import net.milkbowl.vault.item.ItemInfo;
+import net.milkbowl.vault.item.Items;
 import net.milkbowl.vault.permission.Permission;
+import org.bukkit.Material;
 import org.extendedalpha.pluginbase.subapi.SubPlugin;
 import org.extendedalpha.pluginbase.subapi.util.ListUtil;
 import org.extendedalpha.pluginbase.subapi.util.Util;
@@ -24,7 +27,6 @@ import org.bukkit.plugin.ServicesManager;
 
 public class VaultHandler extends DependencyProvider<Vault>
 {
-
 	private Permission perm;
 	private Economy econ;
 	private Chat chat;
@@ -75,7 +77,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 	/**
 	 * Attempts to deposit a given amount into a given Player's balance. Returns
 	 * null if the transaction was a success.
-	 * 
+	 *
 	 * @param player Player to give money to
 	 * @param amount Amount to give
 	 * @return Error message, if applicable
@@ -88,7 +90,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 	/**
 	 * Attempts to deposit a given amount into a given account's balance. Returns
 	 * null if the transaction was a success.
-	 * 
+	 *
 	 * @param account Account to give money to
 	 * @param amount Amount to give
 	 * @return Error message, if applicable
@@ -101,7 +103,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 		try
 		{
 			@SuppressWarnings("deprecation")
-            EconomyResponse response = econ.depositPlayer(account, amount);
+			EconomyResponse response = econ.depositPlayer(account, amount);
 			return response.transactionSuccess() ? null : response.errorMessage;
 		}
 		catch (Throwable ex)
@@ -114,7 +116,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 	/**
 	 * Attempts to withdraw a given amount from a given Player's balance.
 	 * Returns null if the transaction was a success.
-	 * 
+	 *
 	 * @param player Player to take money from
 	 * @param amount Amount to take
 	 * @return Error message, if applicable
@@ -127,7 +129,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 	/**
 	 * Attempts to withdraw a given amount from a given account's balance.
 	 * Returns null if the transaction was a success.
-	 * 
+	 *
 	 * @param account Account to take money from
 	 * @param amount Amount to take
 	 * @return Error message, if applicable
@@ -152,7 +154,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Whether or not a Player has a given amount.
-	 * 
+	 *
 	 * @param player Player to check
 	 * @param amount Amount to check for
 	 * @return True if they do, false if not
@@ -164,7 +166,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Whether or not an account has a given amount.
-	 * 
+	 *
 	 * @param account Account to check
 	 * @param amount Amount to check for
 	 * @return True if they do, false if not
@@ -189,7 +191,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Whether or not an account exists.
-	 * 
+	 *
 	 * @param account Account to check for
 	 * @return True if it exists, false if not
 	 */
@@ -204,7 +206,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Formats a given cash amount using the appropriate currency symbol.
-	 * 
+	 *
 	 * @param amount Amount to format
 	 * @return The formatted string
 	 */
@@ -226,7 +228,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Gets a Player's balance.
-	 * 
+	 *
 	 * @param player Player to get balance of
 	 * @return Balance
 	 */
@@ -261,7 +263,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Whether or not a CommandSender has a permission.
-	 * 
+	 *
 	 * @param sender Sender to check
 	 * @param permission Permission to check for
 	 * @return True if they do, false if not
@@ -276,7 +278,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Gives a player a permission.
-	 * 
+	 *
 	 * @param player Player to give permission to
 	 * @param permission Permission to give
 	 * @return True if successful, false if not
@@ -291,7 +293,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Removes a permission from a player
-	 * 
+	 *
 	 * @param player Player to remove permission from
 	 * @param permission Permission to remove
 	 * @return True if successful, false if not
@@ -306,7 +308,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Gets a player's primary group.
-	 * 
+	 *
 	 * @param player Player to get group for
 	 * @return The group
 	 */
@@ -332,7 +334,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Gets a List of available groups.
-	 * 
+	 *
 	 * @return The list
 	 */
 	public List<String> getGroups()
@@ -345,7 +347,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Gets a player's prefix.
-	 * 
+	 *
 	 * @param player Player to get prefix for
 	 * @return The prefix
 	 */
@@ -359,7 +361,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Gets a player's suffix.
-	 * 
+	 *
 	 * @param player Player to get suffix for
 	 * @return The suffix
 	 */
@@ -373,7 +375,7 @@ public class VaultHandler extends DependencyProvider<Vault>
 
 	/**
 	 * Whether or not a player is in a group.
-	 * 
+	 *
 	 * @param player Player to check
 	 * @param group Group to check for
 	 * @return True if they are, false if not.
@@ -384,5 +386,17 @@ public class VaultHandler extends DependencyProvider<Vault>
 			return false;
 
 		return chat.playerInGroup(player, group);
+	}
+
+	/**
+	 * Attempts to resolve a string into a Material using Vault's Items API.
+	 *
+	 * @param string String to resolve
+	 * @return Material, or null if not found
+	 */
+	public static Material resolve(String string)
+	{
+		ItemInfo info = Items.itemByString(string);
+		return info != null ? info.getType() : null;
 	}
 }

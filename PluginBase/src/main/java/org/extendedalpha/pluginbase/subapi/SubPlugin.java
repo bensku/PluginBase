@@ -82,4 +82,8 @@ public abstract class SubPlugin extends JavaPlugin implements Reloadable
 	{
 		
 	}
+
+	public LogHandler getLogHandler() {
+		return logHandler;
+	}
 }

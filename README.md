@@ -7,14 +7,11 @@
 > Note if you plan to use this framework you must credit us. Also this plugin should be shaded into your plugin using maven shade plugin it does not support being ran as a bukkit plugin.
 ***
 
+## Modules / Releases
+http://www.extendedalpha.org/resources/blockphysics.2/
+
 ## Website
 http://www.extendedalpha.org/
-
-## Custom URL Shortener
-http://sh.extendedalpha.org/
-
-## Java Docs currently closed will be back up soon
-http://docs.extendedalpha.org/
 
 ## Building
 

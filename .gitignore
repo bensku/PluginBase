@@ -111,8 +111,5 @@ local.properties
 # TeXlipse plugin
 .texlipse
 
-# AlphaGuard Plugin
-*AlphaGuard
-
-# InFamousPermissions Plugin
-*InFamousPermissions
+# MultiWorldInventories Plugin
+*MultiWorldInventories

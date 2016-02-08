@@ -9,6 +9,7 @@
 
 ## Modules / Releases
 http://www.extendedalpha.org/resources/blockphysics.2/
+https://www.spigotmc.org/resources/multiworldinventory.17906/
 
 ## Website
 http://www.extendedalpha.org/

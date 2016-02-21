@@ -13,6 +13,8 @@
 
     <modules>
         <module>PluginBase</module>
+        <module>API</module>
+        <module>NMS-v1_8_R3</module>
         <module>BlockPhysics</module>
         <module>MultiWorldInventory</module>
     </modules>

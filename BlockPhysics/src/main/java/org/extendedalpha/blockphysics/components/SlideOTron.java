@@ -38,9 +38,9 @@ import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.util.BlockIterator;
 import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
-import org.extendedalpha.pluginbase.ItemGlow;
-import org.extendedalpha.pluginbase.MiscUtil;
-import org.extendedalpha.pluginbase.ParticleEffect;
+import org.extendedalpha.pluginbase.misc.ItemGlow;
+import org.extendedalpha.pluginbase.misc.MiscUtil;
+import org.extendedalpha.pluginbase.misc.ParticleEffect;
 import org.extendedalpha.pluginbase.cuboid.Cuboid;
 
 public class SlideOTron {

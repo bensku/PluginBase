@@ -19,8 +19,8 @@ package org.extendedalpha.blockphysics.commands;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
-import org.extendedalpha.pluginbase.MessagePager;
-import org.extendedalpha.pluginbase.MiscUtil;
+import org.extendedalpha.pluginbase.misc.MessagePager;
+import org.extendedalpha.pluginbase.misc.MiscUtil;
 import org.extendedalpha.pluginbase.commands.AbstractCommand;
 
 public class PageCommand extends AbstractCommand {

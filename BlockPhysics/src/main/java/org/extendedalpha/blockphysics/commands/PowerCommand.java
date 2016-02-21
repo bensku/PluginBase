@@ -21,8 +21,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.extendedalpha.blockphysics.components.SlideOTron;
-import org.extendedalpha.pluginbase.EAUtilsException;
-import org.extendedalpha.pluginbase.EAValidate;
+import org.extendedalpha.pluginbase.misc.EAUtilsException;
+import org.extendedalpha.pluginbase.misc.EAValidate;
 import org.extendedalpha.pluginbase.commands.AbstractCommand;
 
 public class PowerCommand extends AbstractCommand {

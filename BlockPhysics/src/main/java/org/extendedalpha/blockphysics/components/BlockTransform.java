@@ -20,7 +20,7 @@ package org.extendedalpha.blockphysics.components;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.material.MaterialData;
 import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
-import org.extendedalpha.pluginbase.LogUtils;
+import org.extendedalpha.pluginbase.misc.LogUtils;
 
 import java.util.HashMap;
 import java.util.Map;

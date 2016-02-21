@@ -24,9 +24,9 @@ import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
-import org.extendedalpha.pluginbase.ConfigurationManager;
-import org.extendedalpha.pluginbase.EAUtilsException;
-import org.extendedalpha.pluginbase.MiscUtil;
+import org.extendedalpha.pluginbase.misc.ConfigurationManager;
+import org.extendedalpha.pluginbase.misc.EAUtilsException;
+import org.extendedalpha.pluginbase.misc.MiscUtil;
 import org.extendedalpha.pluginbase.commands.AbstractCommand;
 
 public class DeleteCfgCommand extends AbstractCommand {

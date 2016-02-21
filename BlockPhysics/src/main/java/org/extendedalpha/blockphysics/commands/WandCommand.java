@@ -24,8 +24,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
-import org.extendedalpha.pluginbase.EAValidate;
-import org.extendedalpha.pluginbase.MiscUtil;
+import org.extendedalpha.pluginbase.misc.EAValidate;
+import org.extendedalpha.pluginbase.misc.MiscUtil;
 import org.extendedalpha.pluginbase.commands.AbstractCommand;
 
 public class WandCommand extends AbstractCommand {

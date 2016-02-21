@@ -21,7 +21,7 @@ import org.bukkit.World;
 import org.bukkit.configuration.Configuration;
 import org.bukkit.material.MaterialData;
 import org.extendedalpha.blockphysics.components.BlockTransform;
-import org.extendedalpha.pluginbase.Debugger;
+import org.extendedalpha.pluginbase.misc.Debugger;
 
 import java.util.HashMap;
 import java.util.Map;

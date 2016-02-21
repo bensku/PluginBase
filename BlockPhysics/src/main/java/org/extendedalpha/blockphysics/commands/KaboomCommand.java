@@ -22,7 +22,7 @@ import org.bukkit.block.Block;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
-import org.extendedalpha.pluginbase.EAUtilsException;
+import org.extendedalpha.pluginbase.misc.EAUtilsException;
 import org.extendedalpha.pluginbase.commands.AbstractCommand;
 
 import java.util.Set;

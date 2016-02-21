@@ -40,8 +40,8 @@ import org.bukkit.util.Vector;
 import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
 import org.extendedalpha.blockphysics.components.SlideManager;
 import org.extendedalpha.blockphysics.components.SlideOTron;
-import org.extendedalpha.pluginbase.Debugger;
-import org.extendedalpha.pluginbase.MiscUtil;
+import org.extendedalpha.pluginbase.misc.Debugger;
+import org.extendedalpha.pluginbase.misc.MiscUtil;
 
 import java.util.Random;
 

@@ -20,7 +20,7 @@ package org.extendedalpha.blockphysics.commands;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
 import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
-import org.extendedalpha.pluginbase.MiscUtil;
+import org.extendedalpha.pluginbase.misc.MiscUtil;
 import org.extendedalpha.pluginbase.commands.AbstractCommand;
 
 public class ReloadCommand extends AbstractCommand {

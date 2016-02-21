@@ -36,8 +36,8 @@ import org.extendedalpha.blockphysics.components.SlideManager;
 import org.extendedalpha.blockphysics.components.SlideOTron;
 import org.extendedalpha.blockphysics.handlers.SnowHandler;
 import org.extendedalpha.blockphysics.listeners.EventListener;
-import org.extendedalpha.pluginbase.*;
-import org.extendedalpha.pluginbase.commands.CommandManager;
+import org.extendedalpha.pluginbase.misc.*;
+import org.extendedalpha.pluginbase.misc.commands.CommandManager;
 import org.mcstats.Metrics;
 
 import java.io.IOException;

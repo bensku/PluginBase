@@ -33,8 +33,8 @@ import org.bukkit.material.PistonExtensionMaterial;
 import org.bukkit.util.Vector;
 import org.extendedalpha.blockphysics.BlockPhysicsPlugin;
 import org.extendedalpha.blockphysics.events.BlockSlideEvent;
-import org.extendedalpha.pluginbase.Debugger;
-import org.extendedalpha.pluginbase.LogUtils;
+import org.extendedalpha.pluginbase.misc.Debugger;
+import org.extendedalpha.pluginbase.misc.LogUtils;
 import org.extendedalpha.pluginbase.cuboid.Cuboid;
 
 import java.util.ArrayList;

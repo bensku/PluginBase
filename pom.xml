@@ -13,7 +13,6 @@
 
     <modules>
         <module>PluginBase</module>
-        <module>API</module>
         <module>BlockPhysics</module>
         <module>MultiWorldInventory</module>
     </modules>

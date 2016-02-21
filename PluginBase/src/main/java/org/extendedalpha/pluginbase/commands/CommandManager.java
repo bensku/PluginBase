@@ -3,7 +3,6 @@ package org.extendedalpha.pluginbase.commands;
 import java.lang.reflect.Modifier;
 import java.util.*;
 
-import org.extendedalpha.pluginbase.*;
 import org.extendedalpha.pluginbase.commands.AbstractCommand.CommandRecord;
 
 import org.bukkit.Sound;
@@ -13,6 +12,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
 import com.google.common.base.Joiner;
+import org.extendedalpha.pluginbase.misc.*;
 
 public class CommandManager {
 	private static final List<String> EMPTY_STRING_LIST = Collections.emptyList();

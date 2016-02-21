@@ -1,9 +1,8 @@
 package org.extendedalpha.pluginbase.cost;
 
-import org.extendedalpha.pluginbase.EAUtilsException;
-import org.extendedalpha.pluginbase.EAValidate;
-import org.extendedalpha.pluginbase.LogUtils;
-import org.extendedalpha.pluginbase.PluginVersionChecker;
+import org.extendedalpha.pluginbase.misc.EAUtilsException;
+import org.extendedalpha.pluginbase.misc.EAValidate;
+import org.extendedalpha.pluginbase.misc.LogUtils;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
 
@@ -23,8 +22,8 @@ public class EconomyCost extends Cost {
             Plugin vault = Bukkit.getPluginManager().getPlugin("Vault");
             EAValidate.notNull(vault, "Economy costs not available: Vault not installed");
             EAValidate.isTrue(vault.isEnabled(), "Economy costs not available: Vault not enabled");
-            int ver = PluginVersionChecker.getRelease(vault.getDescription().getVersion());
-            vaultLegacyMode = ver < 1003000;  // 1.3.0
+			int version = 0;
+			vaultLegacyMode = version < 1003000;  // 1.3.0
             if (vaultLegacyMode) {
                 LogUtils.warning("Detected an older version of Vault.  Proper UUID functionality requires Vault 1.4.1 or later.");
             }

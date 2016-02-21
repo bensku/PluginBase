@@ -8,9 +8,9 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.extendedalpha.pluginbase.EAUtilsException;
-import org.extendedalpha.pluginbase.Debugger;
-import org.extendedalpha.pluginbase.MiscUtil;
+import org.extendedalpha.pluginbase.misc.EAUtilsException;
+import org.extendedalpha.pluginbase.misc.Debugger;
+import org.extendedalpha.pluginbase.misc.MiscUtil;
 
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.command.CommandSender;

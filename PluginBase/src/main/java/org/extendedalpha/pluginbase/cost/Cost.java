@@ -1,6 +1,6 @@
 package org.extendedalpha.pluginbase.cost;
 
-import org.extendedalpha.pluginbase.LogUtils;
+import org.extendedalpha.pluginbase.misc.LogUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Material;

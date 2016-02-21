@@ -1,6 +1,6 @@
 package org.extendedalpha.pluginbase.cuboid;
 
-import org.extendedalpha.pluginbase.Debugger;
+import org.extendedalpha.pluginbase.misc.Debugger;
 import org.extendedalpha.pluginbase.block.MassBlockUpdate;
 import org.extendedalpha.pluginbase.nms.NMSHelper;
 import org.bukkit.*;

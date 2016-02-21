@@ -1,6 +1,6 @@
 package org.extendedalpha.pluginbase.cost;
 
-import org.extendedalpha.pluginbase.ExperienceManager;
+import org.extendedalpha.pluginbase.misc.ExperienceManager;
 
 import org.bukkit.entity.Player;
 

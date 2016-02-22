@@ -14,6 +14,10 @@ https://www.spigotmc.org/resources/multiworldinventory.17906/
 ## Website
 http://www.extendedalpha.org/
 
+## Server
+play.extendedalpha.org <br> </br>
+Port :25565
+
 ## Building
 
 You will need Maven.
